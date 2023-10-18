@@ -1,0 +1,38 @@
+.glow-button {
+    display: inline-block;
+    text-decoration: none;
+    /* margin-top: 30px; */
+    position: relative;
+    /* bottom: 1%; */
+    top: 15%;
+  }
+  
+  .glow-button button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .glow-button button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* border-radius: 50%; */
+    opacity: 0;
+    transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .glow-button button:hover {
+    box-shadow: 0 0 10px 5px #fff; 
+  }
+ 
