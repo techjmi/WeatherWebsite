@@ -98,6 +98,14 @@ html{
     ;
     /* position: fixed; */
 }
+/* for about image */
+#circular-image {
+    clip-path: circle(50% at center);
+    /* Or you can use the below code to make it more compatible with older browsers */
+    /* clip-path: ellipse(50% 50% at 50% 50%); */
+    max-width: 100%;
+    height: auto;
+}
 
 
 
